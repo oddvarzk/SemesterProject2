@@ -15,5 +15,8 @@
     "url": "https://github.com/oddvarzk/SemesterProject2/issues"
   },
   "homepage": "https://github.com/oddvarzk/SemesterProject2#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }
