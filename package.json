@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "url": "https://github.com/oddvarzk/SemesterProject2/issues"
   },
   "homepage": "https://github.com/oddvarzk/SemesterProject2#readme",
-  "description": "",
+  "description": "Semester Project 2 - CA",
   "type": "module",
   "devDependencies": {
     "tailwindcss": "^3.4.3"
