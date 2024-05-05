@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/oddvarzk/SemesterProject2#readme",
   "description": "",
+  "type": "module",
   "devDependencies": {
     "tailwindcss": "^3.4.3"
   }
