@@ -1,8 +1,13 @@
+const module = ('module');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './index.html',
-    './styles/**/*.{html,js}',
+    './auctionPage/index.html',
+    './biddingPage/index.html',
+    './loginPage/index.html',
+    './profilePage/index.html',
+    './registerPage/index.html'
   ],
   theme: {
     extend: {
