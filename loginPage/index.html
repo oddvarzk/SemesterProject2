@@ -93,5 +93,84 @@
         </div>
       </div>
     </nav>
+
+    <div class="flex justify-center py-20">
+      <div
+        class="w-full rounded-lg sm:max-w-md xl:p-0 bg-slate-800 flex justify-center shadow-xl"
+      >
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <h1
+            class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-orange-200 text-center"
+          >
+            Client Login
+          </h1>
+          <p class="text-sm text-gray-500 dark:text-gray-400 text-center">
+            Welcome back! Please login to your account or use the button below
+            to Register if you don't have an account with us.
+          </p>
+
+          <form class="space-y-1 md:space-y-6 group" novalidate>
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="peer bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block p-2.5 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 w-full"
+                placeholder="E-mail"
+                required
+                pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              />
+              <span
+                class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+              >
+                Please enter a valid email address with the domain noroff.no or
+                stud.noroff.no.
+              </span>
+            </div>
+            <div>
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="••••••••"
+                class="peer bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block p-3 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 w-full"
+                minlength="8"
+                required
+              />
+              <span
+                class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+              >
+                Your password has to be atleast 8 characters long.
+              </span>
+            </div>
+            <div class="flex items-center justify-between"></div>
+            <button
+              type="submit"
+              class="w-full text-black bg-orange-200 font-medium rounded-lg text-sm py-3 text-center hover:bg-slate-600 transition duration-200 group-invalid:pointer-events-none group-invalid:opacity-30"
+            >
+              Login
+            </button>
+            <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+              Don't have an account yet?
+              <a
+                href="/registerPage/"
+                class="font-medium hover:underline text-orange-200"
+                >Register here</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
