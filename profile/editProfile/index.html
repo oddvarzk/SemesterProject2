@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Page that showcases a singlar item that is biddable."
+      content="This is the profile page for the user when logged in, where information about their account is shown."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link href="/styles/output.css" rel="stylesheet" />
-    <title>Bidding page for single item.</title>
+    <title>User profile page</title>
     <script type="module" src="/js/navBar/index.js"></script>
   </head>
   <body class="min-h-screen bg-gradient-to-b from-slate-800 to-slate-500">
@@ -50,7 +50,6 @@
             </button>
           </div>
         </div>
-
         <div
           class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 font-playfair navigation-menu"
         >
@@ -68,5 +67,40 @@
         </div>
       </div>
     </nav>
+
+    <div class="w-full">
+      <div class="flex justify-center items-center text-white">
+        <div
+          class="flex flex-col items-center justify-center bg-slate-800 rounded-lg p-10 m-10 shadow-lg w-full md:w-1/2 relative"
+        >
+          <div class="absolute flex left-5 top-3 gap-5">
+            <div
+              class="w-15 h-10 text-center text-slate-200 flex items-center justify-center font-semibold"
+            >
+              1 Followers
+            </div>
+            <div
+              class="w-15 h-10 text-center text-slate-200 flex items-center justify-center font-semibold"
+            >
+              50 Following
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="/images/profileImage.png"
+              alt="profile picture"
+              class="rounded-full h-40 w-40"
+            />
+            <h2 class="text-2xl font-semibold">John Doe</h2>
+            <p class="text-lg font-light py-3">
+              I am John Doe, front end developer and user of this website.
+            </p>
+          </div>
+          <div class="container text-center py-5">
+            <h3 class="font-semibold">My Active Bids</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

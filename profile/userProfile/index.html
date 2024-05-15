@@ -50,35 +50,6 @@
             </button>
           </div>
         </div>
-
-        <div class="relative flex md:ml-4 md:px-10">
-          <input
-            type="search"
-            class="relative m-0 block flex-auto rounded border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-light leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
-            placeholder="Search for items"
-            aria-label="Search"
-            id="exampleFormControlInput2"
-            aria-describedby="button-addon2"
-          />
-          <span
-            class="flex items-center whitespace-nowrap px-3 py-[0.25rem] text-surface dark:border-neutral-400 dark:text-white [&>svg]:h-5 [&>svg]:w-5"
-            id="button-addon2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
-          </span>
-        </div>
         <div
           class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 font-playfair navigation-menu"
         >
@@ -96,5 +67,47 @@
         </div>
       </div>
     </nav>
+
+    <div class="w-full">
+      <div class="flex justify-center items-center text-white">
+        <div
+          class="flex flex-col items-center justify-center bg-slate-800 rounded-lg p-10 m-10 shadow-lg w-full md:w-1/2 relative"
+        >
+          <div class="absolute flex left-5 top-3 gap-5">
+            <div
+              class="w-15 h-10 text-center text-slate-200 flex items-center justify-center font-semibold"
+            >
+              1 Followers
+            </div>
+            <div
+              class="w-15 h-10 text-center text-slate-200 flex items-center justify-center font-semibold"
+            >
+              50 Following
+            </div>
+          </div>
+          <div class="absolute flex right-5 top-5 gap-5">
+            <div
+              class="w-15 h-8 text-center text-slate-900 flex items-center justify-center font-semibold bg-orange-200 rounded-3xl px-3 hover:bg-orange-300"
+            >
+              Follow
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="/images/profileImage.png"
+              alt="profile picture"
+              class="rounded-full h-40 w-40"
+            />
+            <h2 class="text-2xl font-semibold">John Doe</h2>
+            <p class="text-lg font-light py-3">
+              I am John Doe, front end developer and user of this website.
+            </p>
+          </div>
+          <div class="container text-center py-5">
+            <h3 class="font-semibold">Active Bids</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
