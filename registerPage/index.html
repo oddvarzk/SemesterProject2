@@ -24,7 +24,7 @@
               class="h-20 w-30"
           /></a>
           <div class="md:hidden flex items-center px-10">
-            <button type="button" class="mobile-menu-button">
+            <button title="hamburger-menu" type="button" class="mobile-menu-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -81,22 +81,24 @@
           <form class="space-y-1 md:space-y-6 group" id="registerForm" novalidate>
             <div>
               <label
-                for="name"
+                for="username"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Full name</label
+                >Username</label
               >
               <input
                 type="name"
                 name="name"
                 id="name"
+                pattern="^[\w]+$"
+                maxlength="20"
+                autocomplete="username"
                 class="peer bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block p-2.5 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 w-full""
                 required
               />
               <span
                 class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
               >
-                Please enter a valid email address with the domain @noroff.no or
-                @stud.noroff.no.
+                Please enter a valid username. Only letters, numbers and underscores are allowed.
               </span>
             </div>
             <div>
