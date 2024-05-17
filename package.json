@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch",
-    "format": "prettier -w src/**/*.js"
+    "format": "prettier -w auctionPage/**/*.html"
   },
   "repository": {
     "type": "git",
