@@ -7,6 +7,7 @@
     <link href="/styles/output.css" rel="stylesheet" />
     <title>User login page</title>
     <script type="module" src="/js/navBar/index.mjs"></script>
+    <script type="module" src="/js/index.mjs"></script>
   </head>
   <body class="min-h-screen bg-gradient-to-b from-slate-800 to-slate-500">
     <nav class="text-white">
@@ -73,7 +74,7 @@
 
           <form
             class="space-y-1 md:space-y-6 group"
-            action="/profile/editProfile/"
+            id="loginForm"
             novalidate
           >
             <div>
@@ -86,6 +87,7 @@
                 type="email"
                 name="email"
                 id="email"
+                autocomplete="current-email"
                 class="peer bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block p-2.5 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 w-full"
                 required
                 pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
@@ -107,6 +109,7 @@
                 type="password"
                 name="password"
                 id="password"
+                autocomplete="current-password"
                 class="peer bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block p-3 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 w-full"
                 minlength="8"
                 required
