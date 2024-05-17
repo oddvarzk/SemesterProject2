@@ -10,12 +10,7 @@ module.exports = {
     "./registerPage/index.html",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        playfair: ["Playfair+Display", "serif"],
-        serifFour: ["Source+Serif+4", "serif"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
