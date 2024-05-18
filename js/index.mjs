@@ -13,9 +13,3 @@ if (path === '/profile/login'){
 } else if (path === '/profile/register'){
     setRegisterFormListener();
 }
-
-// listing.createListing()
-// listing.updateListing()
-// listing.removeListing()
-// listing.getListing()
-listing.getListings().then(console.log)
