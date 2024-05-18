@@ -1,3 +1,13 @@
-import * as constants from "./API/constants.mjs";
+import { setRegisterFormListener } from "./handlers/register.mjs";
+import { setLoginFormListener } from "./handlers/login.mjs";
 
-console.log(constants.API_BASE);
+setRegisterFormListener();
+setLoginFormListener();
+
+const path = location.pathname;
+
+if (path === "/profile/login"){
+    setLoginFormListener();
+} else if (path === "/profile/register"){
+    setRegisterFormListener();
+}
