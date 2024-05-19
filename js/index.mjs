@@ -1,15 +1,15 @@
-import { setRegisterFormListener } from "./handlers/register.mjs";
-import { setLoginFormListener } from "./handlers/login.mjs";
+import * as listeners from "./handlers/index.mjs";
 
-import * as listing from "./API/listings/index.mjs";
-
-setRegisterFormListener();
-setLoginFormListener();
+// Set the form listeners
+listeners.setRegisterFormListener();
+listeners.setLoginFormListener();
 
 const path = location.pathname;
 
 if (path === '/profile/login'){
-    setLoginFormListener();
+    listeners.setLoginFormListener();
 } else if (path === '/profile/register'){
-    setRegisterFormListener();
+    listeners.setRegisterFormListener();
+} else if (path === '/listing/create'){
+    listeners.setCreateListingFormListener();
 }

@@ -13,7 +13,8 @@
       src="https://kit.fontawesome.com/f82c4356c6.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="/js/navBar/index.mjs"></script>
+    <script type="module" defer src="/js/navBar/index.mjs"></script>
+    <script type="module" defer src="/js/index.mjs"></script>
   </head>
 
   <body class="min-h-screen bg-gradient-to-b from-slate-800 to-slate-500">
@@ -51,14 +52,14 @@
         <div
           class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 font-playfair navigation-menu"
         >
-          <a href="/auction/" class="hover:text-gray-400 py-2 px-5 block"
+          <a href="/listings/" class="hover:text-gray-400 py-2 px-5 block"
             >Auction</a
           >
-          <a href="/loginPage/" class="hover:text-gray-400 py-2 px-5 block"
+          <a href="/profile/login/" class="hover:text-gray-400 py-2 px-5 block"
             >Login</a
           >
           <a
-            href="/registerPage/"
+            href="/profile/register/"
             class="hover:text-white py-2 px-5 block rounded-md bg-slate-200 text-black transition hover:bg-slate-700"
             >Register</a
           >
@@ -70,40 +71,28 @@
     <h1 class="text-white text-2xl text-center m-10">Bidding Area</h1>
 
     <!--Auction listing-->
-    <div class="flex justify-center flex-wrap gap-20 px-20">
-      <div
-        class="rounded-lg p-5 flex flex-col items-center w-fit justify-center transition hover:scale-105"
-      >
-        <img
-          src="/images/catImage.jpg"
-          alt="auction item 1"
-          class="w-80 h-80 rounded-lg object-cover shadow-lg"
-        />
-      </div>
-      <div>
-        <h2 class="text-white text-2xl font-bold mt-5">
-          Example of Auctioned Item
-        </h2>
-        <p class="text-gray-400 text-sm mt-2">Ends in 4hrs 16mins</p>
-        <p class="text-gray-200 text-sm mt-2">Last bid: 10 coins</p>
-        <div
-          class="text-center bg-orange-200 text-black px-3 py-1 rounded-lg mt-5 w-full transition hover:bg-slate-800 hover:text-white shadow-lg"
-        >
-          Bid
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="flex justify-center">
-      <div
-      class="rounded-lg p-5 flex flex-col items-center w-fit justify-center"
-      >
-        <div
-        class="bg-slate-700 text-white px-5 py-1 rounded-md mt-5 w-full transition hover:bg-slate-800"
-      >
-        Show bidding history <i class="fa-solid fa-chevron-down"></i>
-      </div>
-      </div>
-    </div>
+    <div class="flex justify-center flex-wrap gap-20 px-20" id="listing-container"></div>
+
+
+
+
+    <footer class="fixed bottom-0 left-0 w-full p-4 bg-slate-800 shadow-lg md:flex md:items-center md:justify-between md:p-2 mt-10">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <img src="/images/websiteLogo.png"></a>All Rights Reserved TCA.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 gap-10">
+          <li>
+              <a class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+              <a class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+              <a class="hover:underline">Contact</a>
+          </li>
+      </ul>
+  </footer>
   </body>
 </html>
